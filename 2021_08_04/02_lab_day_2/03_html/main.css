@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.summary,
+.quote,
+.outline,
+.image-box,
+.detail__text {
+  border: 5px solid #999;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* FIXME: check grid layout */
+/* .wiki-like {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+} */
+
+.wiki-like {
+  padding: 1rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-box img {
+  max-height: 20rem;
+}

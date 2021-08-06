@@ -1,0 +1,23 @@
+<<<<<Recom
+- auto tag
+- prettier for formatter
+
+<<<<Learn
+- 1 h1 for 1 page or 1 section
+- we can get design by email of mockup 
+- title attribute for show some info.
+- level, folder structure
+
+// User Interface
+- minimize actions
+- 
+
+// mockup tools
+- cocca(low level)
+- figma(low level)
+- invision(high level)
+
+// webpage - website
+website has more functionality.
+webpage is like statistic page.
+

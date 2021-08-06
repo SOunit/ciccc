@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+/* task a */
+h1,
+h2 {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* task b */
+#main-header,
+#sub-header {
+  font-size: 0.5rem;
+}
+
+/* task c */
+.image-container img {
+  border: 8px solid green;
+}
+
+/* task d */
+table {
+  border: 3px solid red;
+}
+td {
+  border: 3px solid blue;
+}
+
+/* task e */
+thead td {
+  text-align: center;
+  padding: 0 5rem;
+  font-weight: bold;
+}
+
+.image-container {
+  float: right;
+}

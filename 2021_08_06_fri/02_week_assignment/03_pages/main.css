@@ -1,0 +1,21 @@
+.main-bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('./images/teritory.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  position: relative;
+}
+
+.main-bg__text {
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}

@@ -1,0 +1,73 @@
+// Why, overall
+- communication
+- career
+- first step for development
+- Mockup is more detail than framework
+- tool for client company
+- easy to change than code
+- prototype
+- sketch -> wireframe -> mockup -> prototype
+
+// Wireframe
+- only structure, function, dummy content
+
+// Mockup
+- wireframe with style, colors, right content
+
+// HTML, HTML5
+- video, audo in HTML5
+- semantic tag in HTML5
+
+// Table
+- different monitor sizes
+- table was easy to create
+- not table anymore
+- started using div to create website
+
+// Form
+- receive infomation and send it to backend
+- attribute to tag, type="text", type attribute
+- common input types
+    - text
+    - radio
+    - checkbox
+    - submit
+    - password
+
+// Form attributes
+- action
+- target, open new target
+    - target="_blank"
+- method
+- name
+
+// Input Attributes
+- disabled
+- checked
+- maxLength
+- size
+- autocomplete
+- autofocus
+- Form
+- required
+
+// CSS
+- inline css
+- external css
+- internal css
+- connect css to html
+
+// css connection
+- inline in tag
+    - duplicate code is difficult to maintain.
+    - you have to put a lot.
+- internal in style tag
+    - common style is better.
+    - not applicable to other page is bad.
+- external in link
+    - common style is better.
+    - appliable to other pages.
+
+
+// id, class, tag-name
+- id, its possible assined by backend

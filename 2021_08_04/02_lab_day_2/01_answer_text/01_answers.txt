@@ -1,0 +1,30 @@
+// assignment 1
+a. disscussed with team member.
+b. three positive things are, 
+    1. simple
+    2. easy to use
+    3. enough functionality.
+    4. perfect!
+c. three negative things are, 
+    no negative point for me. 
+    it's easy to use.
+    good!
+
+// assignment 2
+a. PAPER MOCKUP is mockup_from_wiki.jpeg
+b. 
+    1. simple, easy to get infomation. good design for me.
+        but maybe too statistic? That makes some old impression.
+    2. active, with movement and animations. personally, static and simple
+        site is better, because sometimes animation moves button a little down
+        and gives me bad user experience in manipulation.
+        but the footer with images is cool.
+
+// assignment 3
+my file is in 03_html directory, wiki_like.html file.
+
+// assignment 4
+skip.
+
+// assignment 5
+just submit all above.
