@@ -32,6 +32,16 @@ body {
   margin: 0.2rem 0;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  padding: 1rem;
+}
+
 @media (min-width: 40rem) {
   .icon {
     display: none;
