@@ -13,9 +13,68 @@
 
 .main-bg__text {
   color: white;
+  font-weight: bold;
   margin: 0;
   padding: 0;
   position: absolute;
   bottom: 1rem;
   left: 1rem;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-flow: column;
+  border: 1xp solid blue;
+}
+
+.card {
+  border: 1px solid blue;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.balls {
+  display: flex;
+  border: 1px solid blue;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball {
+  border: 1px solid blue;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+  overflow: hidden;
+}
+
+.ball img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards {
+    flex-flow: row;
+    justify-content: center;
+  }
+
+  .balls {
+    flex-flow: row;
+  }
 }
