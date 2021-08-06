@@ -7,4 +7,14 @@ city is Suruga in 1560, Sengoku period.
 
 // task 3
 wireframes by hand.
-go to 
+go to /02_wireframe
+
+// task 4
+html code.
+go to /03_pages
+
+// task 5
+presentation on Monday.
+
+// task 6
+submit all.
