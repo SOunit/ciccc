@@ -17,7 +17,7 @@
 
 .image-container {
   border: 1px solid blue;
-  max-width: 60vw;
+  width: 60vw;
 }
 
 .image-container img {
@@ -34,4 +34,10 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
+}
+
+@media (min-width: 40rem) {
+  .image-container {
+    width: 30vw;
+  }
 }
