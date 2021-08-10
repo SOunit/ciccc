@@ -1,0 +1,31 @@
+// 2 new student
+
+// more about css
+
+// box model
+
+// margin
+margin: 1px 2px 3px
+
+           1px
+        ---------
+2px <-  -       - 2px
+        ---------
+            3px
+
+// position
+margin 20px, from where?
+static -> document flow(=other element)
+relative -> document flow(=other element)
+absolute -> nearest positioned ancestor with not static
+fixed -> viewport(=window)
+sticky -> static to fixed at top
+
+// max-hegiht
+max-height and scroll
+
+// overflow
+- visible, default
+- hidden, good
+- scroll
+- auto, good, scroll if neccessary
