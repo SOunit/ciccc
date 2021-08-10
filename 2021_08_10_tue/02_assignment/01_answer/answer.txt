@@ -1,4 +1,15 @@
 // answers
 1. create html page
+    in ../02_html_page
 2. apply css tyles
-    a. 
+    in ../02_html_page
+        a. add css
+        b. add css
+        c. add css
+        d. add css
+        e. add css
+        f. add css
+        g. add css
+        h. add css
+        i. add css
+3. submit file to google class room
