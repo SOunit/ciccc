@@ -1,0 +1,40 @@
+// DOM, document object model
+html, structure
+css, style
+javascript, algorizm
+
+dom is all element is tree
+
+// why important
+js manipulate dom, dom is html
+
+// tree structure
+html elements, parents and children
+html
+body
+header, main, footer
+div, div, div,div, div, div,div, div, div
+div, div, div,div, div, div,
+
+// js
+network
+manipulate dom
+show message
+
+// 3 important in JS
+document, document is dom, html is dom
+window, window is browser
+header, header means network
+
+access to outer database
+we create only client UI
+
+
+// css review
+selector, property, value
+
+
+dom - document - html
+document means everything, all html tags
+
+node is almost equal element
