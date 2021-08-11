@@ -1,2 +1,5 @@
 1. create html page
-2. 
+2. in 02_html_js
+3. in 02_html_js
+4. in 02_html_js
+5. in 02_html_js
