@@ -1,13 +1,15 @@
 console.log('hello from js');
 
-// ====================
-// task 1
-// ====================
+console.log('--------------------');
+console.log('task 1 start');
+console.log('--------------------');
+
 console.log('sample'.toUpperCase());
 
-// ====================
-// task 2
-// ====================
+console.log('--------------------');
+console.log('task 2 start');
+console.log('--------------------');
+
 const match = () => {
   // get user input
   let userInput = prompt('please enter number 1 - 10');
@@ -36,9 +38,10 @@ const match = () => {
 // prompt is annoying for finishing other tasks
 // match();
 
-// ====================
-// task 3
-// ====================
+console.log('--------------------');
+console.log('task 3 start');
+console.log('--------------------');
+
 let sampleArray = [10, 1, 10, 1, 10];
 // will be [9, 1, 9, 1, 9];
 
@@ -68,9 +71,10 @@ const replace2 = (arr, targetNum) => {
 result = replace2(sampleArray, 3);
 console.log(result);
 
-// ====================
-// task 4
-// ====================
+console.log('--------------------');
+console.log('task 4 start');
+console.log('--------------------');
+
 const sortArray = (arr) => {
   return arr.sort();
 };
@@ -80,9 +84,10 @@ console.log(sortArray(sampleArray));
 sampleArray = ['Z', 'A', 'D', 'K'];
 console.log(sortArray(sampleArray));
 
-// ====================
-// task 5
-// ====================
+console.log('--------------------');
+console.log('task 5 start');
+console.log('--------------------');
+
 const reverseArr = (arr) => {
   return arr.reverse();
 };
@@ -92,14 +97,20 @@ console.log(reverseArr(sampleString.split('')));
 sampleString = 'how are you?';
 console.log(reverseArr(sampleString.split('')));
 
-// ====================
-// task 6
-// ====================
+console.log('--------------------');
+console.log('task 6 start');
+console.log('--------------------');
 const customers = [
   { name: 'Jack', email: 'jack@gmail.com', order: 1000 },
   { name: 'Rebecca', email: 'rebecca@gmail.com', order: 300 },
   { name: 'Kevin', email: 'kevin@gmail.com', order: 400 },
 ];
+
+console.log(customers);
+
+console.log('--------------------');
+console.log('task 7 start');
+console.log('--------------------');
 
 const showHighestOrderInCustomers = (customers) => {
   let max = 0;
