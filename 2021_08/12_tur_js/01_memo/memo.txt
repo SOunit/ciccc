@@ -1,0 +1,31 @@
+// data type
+Primitive data type
+    number
+    strings
+    boolean
+Composite Data type
+    arrays
+    objects
+
+// Statemetns
+each line of java script commands.
+last_name = "Jack";
+x = 10;
+y = x * x;
+
+// opeartors
++
+-
+*
+/
+%
+++
+--
+
+// more operators
+===
+!==
+||
+&&
+?
+
