@@ -97,6 +97,9 @@ submitButton.addEventListener('click', (event) => {
   console.log(userInputData);
   meals.push(userInputData);
 
+  // =========================
+  // task 6
+  // =========================
   alert(
     `name: ${userInputData.name}, price: ${userInputData.price}, popularity: ${userInputData.popularity}`
   );
