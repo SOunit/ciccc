@@ -1,0 +1,23 @@
+// task 1
+add objects to the file below
+../02_output/script.js
+
+// task 2
+add objects to the file below
+../02_output/script.js
+
+// task 3
+add style to css sheet
+../02_output/main.css
+
+// task 4
+add event listener to js
+../02_output/script.js
+
+// task 5
+add form handler to js
+../02_output/script.js
+
+// task 6
+add alert to js
+../02_output/script.js
