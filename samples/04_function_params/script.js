@@ -45,11 +45,11 @@ function consoleYourNumberWithYourName(number, name) {
   console.log(`The number ${name} wants is,`);
   console.log(number);
 }
-consoleYourNumberWithYourName(2, 'Sho');
-consoleYourNumberWithYourName(7, 'Chiho');
+consoleYourNumberWithYourName(2, 'Jack');
+consoleYourNumberWithYourName(7, 'Rebecca');
 
 function introduceMe(person) {
   console.log(`My name is ${person.name}. My gender is ${person.gender}.`);
 }
-const sho = { name: 'Sho', gender: 'Male' };
-introduceMe(sho);
+const jack = { name: 'Jack', gender: 'Male' };
+introduceMe(jack);
