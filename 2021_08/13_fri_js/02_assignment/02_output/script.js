@@ -86,7 +86,7 @@ document.querySelector('.table').addEventListener('mouseleave', () => {
 
 // set event listener
 // <button>Submit</button>
-var submitButton = document.getElementById('submit');
+const submitButton = document.getElementById('submit');
 console.log(submitButton);
 
 submitButton.addEventListener('click', (event) => {
