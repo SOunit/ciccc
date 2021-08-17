@@ -1,0 +1,14 @@
+// work category
+1. from scratch
+2. update, improve
+
+// 3 pages.
+
+- top
+https://www.comp.jp/index.html
+
+- items
+https://www.comp.jp/products/index.html
+
+- item detail
+https://www.comp.jp/products/powder.html
