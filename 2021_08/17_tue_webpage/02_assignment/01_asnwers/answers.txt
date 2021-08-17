@@ -1,0 +1,21 @@
+// task 1
+we choose a. crating copy site.
+
+// task 2
+top page        - sho / li
+products page   - kaori
+product page    - kaori
+
+// task 3
+FIXME
+
+// task 4
+output is in directory below
+
+/02_output
+
+// task 5
+a. by beautiful design
+b. by pages
+c. FIXME
+d. /02_src
