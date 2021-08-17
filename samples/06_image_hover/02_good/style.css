@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hover-scale {
+  display: flex;
+  height: 10rem;
+}
+
+.image-bg {
+  background-color: pink;
+  width: 25%;
+  overflow: hidden;
+}
+
+.image-container {
+  background-image: url('./images/che_laugh.jpg');
+  height: 100%;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.image-container {
+  opacity: 0.5;
+  width: 100%;
+}
+
+.image-container:hover {
+  width: 120%;
+}

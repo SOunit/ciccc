@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hover-scale {
+  display: flex;
+}
+
+.image-bg {
+  background-color: pink;
+  width: 25%;
+}
+
+.image-container {
+  overflow: hidden;
+  height: 8rem;
+}
+
+.image-container img {
+  opacity: 0.5;
+  width: 100%;
+}
+
+.image-container img:hover {
+  width: 120%;
+}
