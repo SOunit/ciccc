@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a7ff8c;
+}
+
+.header {
+  background-color: blue;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.header--scrolled {
+  background-color: red;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: blueviolet;
+  height: 200vh;
+  padding-top: 8rem;
+}
