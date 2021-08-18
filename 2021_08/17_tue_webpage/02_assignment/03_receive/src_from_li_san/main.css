@@ -1,0 +1,41 @@
+.hero-image {
+  position: relative;
+}
+
+.hero-image .button-container {
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+}
+
+.hero-image .button {
+  display: block;
+  margin: 0 auto;
+}
+
+.message__text {
+  width: 70%;
+  margin: 1.5rem auto;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+
+.message__images {
+  display: flex;
+  height: 18rem;
+  justify-content: space-between;
+}
+
+.message__image {
+  display: flex;
+  overflow: hidden;
+}
+
+.message__image--right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.message__image .image-container {
+  width: 90%;
+}

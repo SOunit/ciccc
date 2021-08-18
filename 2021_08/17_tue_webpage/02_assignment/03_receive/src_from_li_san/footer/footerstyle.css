@@ -1,0 +1,20 @@
+/* footer start */
+#DIV6 {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  float: top;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+#DIV7 {
+  background-color: black;
+  height: 430px;
+  width: 100%;
+  float: top;
+  text-align: center;
+  overflow-x: scroll;
+  color: white;
+}
+/* footer end */

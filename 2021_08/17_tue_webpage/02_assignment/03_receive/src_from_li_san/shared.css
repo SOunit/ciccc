@@ -1,0 +1,86 @@
+:root {
+  --body-font-color--black: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--body-font-color--black);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: ease 0.8s;
+}
+
+.header--scrolled {
+  background-color: white;
+}
+
+.header__title {
+  margin: 1.5rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: underline 2.5px var(--body-font-color--black);
+}
+
+.header__title a {
+  color: inherit;
+}
+
+.header__actions {
+  display: flex;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.header__link a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8rem;
+}
+
+.header__menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1.5rem;
+}
+
+.header__menu-button-bar {
+  height: 0.2rem;
+  width: 1.5rem;
+  background-color: var(--body-font-color--black);
+  margin: 0.1rem 0;
+  border-radius: 3px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.button {
+  padding: 1rem;
+  color: white;
+  background-color: #000;
+  border: none;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  width: 55%;
+}
