@@ -1,0 +1,27 @@
+// create a branch
+git checkout -b <branch_name>
+git switch -c <branch_name>
+
+ex.
+git switch -c feature-footer
+
+// go back
+git restore <file_name>
+
+// git push
+git push origin <feature_branch>
+
+// create pull request
+- check file contents
+- select reviewr
+- select asigner
+
+// get pull request, merge
+- check files
+- accept pull request
+- delete branch
+
+// git switch
+// switch branch
+- footer branch
+- header branch

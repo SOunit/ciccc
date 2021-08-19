@@ -1,0 +1,13 @@
+// format
+original number : status : tasks
+
+// local
+2: o: -Create a new dir on your local named prewad 
+3: o: -create 2 files named index.html , style.css. 
+4: o: -Create a new branch on your repo called "prewmdrocks"
+
+// remote
+1: o: -Create a new repo on github named prewad 
+5: o: -Push your project to your repo using the branch "prewmadrocks "
+6: o: -Open the pull request for your new branch
+7: o: -Upload to the classroom the URL of your github repo
