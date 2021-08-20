@@ -1,0 +1,11 @@
+// git personal access token
+to username, put access token
+password, empty, enter
+
+// trero task management
+- backlog, everything
+- todo, 2 weeks deadline
+- doing, progress
+- block, blocked
+- done, finished
+

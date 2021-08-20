@@ -1,0 +1,40 @@
+// format
+original order : status : task descriptions
+
+2 : o : - Create a account on Trello
+4 : o : - Choose a theme for your web site.
+    top
+    https://classroom.google.com/c/Mzc0NDQ4MTAxODQz
+
+    class
+    https://classroom.google.com/w/Mzc0NDQ4MTAxODQz/t/all
+
+1 : o : - Create a github repo
+    google_classroom
+3 : o : - Create a board for your project ( One board for team)
+    google_classroom
+5 : x : - Create a wireframe
+6 : x : - Create your web site with html,css (Javascript with you wanna try, but it is not necessary)
+7 : x : - Your website must have at least 2 pages.
+8 : x : - The presentation will be next Monday
+
+
+// review
+// setup for local git repo
+1. create github repo
+2. clone github ( means copy files from github, remote)
+    git clone <some_url>
+
+// edit local project
+1. open project directory in vs code
+2. edit files, add files
+3. open console in vs code
+    move mouse cursor to top
+    select terminal
+    select new terminal
+4. check git status
+    git status
+5. create commit
+    git add .
+    git commit -m "add new file"
+
