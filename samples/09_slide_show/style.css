@@ -35,9 +35,6 @@ body {
   z-index: 100;
 }
 
-.slide--bottom {
-}
-
 .slide__override {
   transition: 1s;
   width: 100%;
