@@ -1,34 +1,18 @@
 (() => {
-  const nameList = [
-    { index: 1, name: 'a' },
-    { index: 2, name: 'b' },
-    { index: 3, name: 'c' },
-    { index: 4, name: 'd' },
-    { index: 5, name: 'f' },
-    { index: 6, name: 'g' },
-    { index: 7, name: 'h' },
-    { index: 8, name: 'i' },
-    { index: 9, name: 'j' },
-    { index: 10, name: 'k' },
-    { index: 11, name: 'l' },
-    { index: 12, name: 'm' },
-    { index: 13, name: 'n' },
-    { index: 14, name: 'o' },
-    { index: 15, name: 'p' },
-    { index: 16, name: 'q' },
-    { index: 17, name: 'r' },
-    { index: 18, name: 's' },
-    { index: 19, name: 't' },
-    { index: 20, name: 'u' },
-    { index: 21, name: 'v' },
-    { index: 22, name: 'w' },
-    { index: 23, name: 'x' },
-    { index: 24, name: 'y' },
-    { index: 25, name: 'x' },
-    { index: 26, name: 'a-a' },
-    { index: 27, name: 'a-b' },
-    { index: 28, name: 'a-c' },
-  ];
+  const getNameListFromJson = () => {
+    // copy and paste from json
+    // data format
+    // { index: 1, name: 'Jack' }
+    return [{ index: 1, name: 'Jack' }];
+  };
+
+  const arrayShuffle = ([...array]) => {
+    for (let i = array.length - 1; i >= 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  };
 
   const getClassTableList = (arr, availableSeatCount) => {
     let maximum = 0;
@@ -36,6 +20,7 @@
     let index = 0;
     let classTable = [];
     let classTableList = [];
+    let startIndex = 0;
 
     while (maximum < 500) {
       console.log('maximum: ', maximum + 1);
@@ -50,7 +35,10 @@
       }
 
       classTableList.push(classTable);
-      if (maximum > 0 && classTable[0].index === 1) {
+      if (maximum === 0) {
+        startIndex = classTable[0].index;
+      }
+      if (maximum > 0 && classTable[0].index === startIndex) {
         break;
       }
 
@@ -93,7 +81,7 @@
       // create student__name
       const studentNameDiv = document.createElement('div');
       studentNameDiv.classList.add('student__name');
-      studentNameDiv.innerHTML = `name: ${student.name}`;
+      studentNameDiv.innerHTML = `${student.name}`;
 
       // add students ul
       studentLi.append(studentIndexDiv);
@@ -115,6 +103,14 @@
       cyclesSection.append(newCycle);
     });
   };
+
+  // {index: 1, name: 'test'}
+  let nameList = getNameListFromJson();
+
+  const needShuffle = false;
+  if (needShuffle) {
+    nameList = arrayShuffle(nameList);
+  }
 
   const availableSeatCount = 12;
   const classTableList = getClassTableList(nameList, availableSeatCount);
