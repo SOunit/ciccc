@@ -1,0 +1,79 @@
+// computer
+input, process, output for the future.
+
+// function of computer
+1. take data
+2. store data
+3. process and convert data
+4. generate output
+5. control of each steps
+
+// computer contents
+computer is HARD WARE and SOFT WARE
+
+// hardware = touchable
+- monitor
+- mouse
+- keyboad
+- data strage
+- hard drive disk
+- system unit
+    - graphic cards
+    - sound cards
+    - memory
+    - motherboard
+    - chips
+
+// Input device
+to communicate in human way with computer
+- keyboard
+- mouse
+- remote control
+- joystick
+- touch screen
+- scanner
+- graphic tablet
+- microphone
+- digital camera
+- webcams
+- light pens
+
+// central processing unit (CPU)
+brain of the computer
+
+// CPU 3 parts
+1. Arithmetic Logic Unit (ALU)
+    execute all arithmetic and logical operations
+    - calculation
+    - compare
+2. Control Unit (CU)
+    1. read code to execute next
+    2. increment program counter to point next line
+    3. read whatever data
+    4. provide data for ALU
+    5. give order to hardware
+3. Registers
+    store data to execute
+
+// Primary Memory
+1. RAM = Random Access Memory
+    save temporary data
+2. ROM = Read Only Memory
+    save permanent data
+    no overwriting, not allowed to modified
+    u-bootとかの書き換え不要なデータの保存に使う
+
+// Secondary Memory
+remains data after power off
+1. HD = hard drive
+    large data
+    relatively fast
+2. Optical Disk Drive = ODD
+    use laser light
+    large data than floppy disk ( 1.44MB )
+    - CD (700 MB)
+    - DVD(8.4 GB)
+    - Compact discs
+    - Blu-ray(50GB)
+3. Flask disk
+    

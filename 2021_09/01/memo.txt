@@ -1,0 +1,24 @@
+// loadmap
+https://roadmap.sh/
+
+// partition
+// bio
+
+// what is a compouter
+computer is something calculate
+
+// transistor
+transfer electoricity
+1 / 0
+
+// MIPS
+
+// persistent
+Hard Disk Driver(HDD)
+- with flatter, circle magnet
+
+Solid State Drive(SSD)
+- no flatter
+
+// instance
+Random Access Memory RAM 
