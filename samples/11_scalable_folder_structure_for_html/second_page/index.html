@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folder structure sample</title>
+    <!-- shared style first -->
+    <link rel="stylesheet" href="../css/shared.css" />
+    <!-- page unique style come after shared -->
+    <!-- to overwrite shared css style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-logo">
+        <a href="../" class="header-logo__link">
+          header style come from shared css.
+        </a>
+      </h1>
+      <nav class="header-nav">
+        <ul class="header-nav-items">
+          <li class="header-nav-item">
+            <a class="header-nav-item__link" href="./">second page</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-item__link" href="../third_page">third page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article>
+        <section>
+          <h2 class="section-title">this page is 2nd page!</h2>
+          <p>index.html page should be in root directory of your project</p>
+          <p>you can access without file name if it's index.html</p>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">footer style come from shared css.</footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* this here has styles only for top page! */
+
+.main {
+  background-color: rgb(134, 134, 255);
+}
+
+.section-title {
+  background-color: blue;
+  color: white;
+}

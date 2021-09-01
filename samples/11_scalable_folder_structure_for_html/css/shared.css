@@ -1,0 +1,40 @@
+/* this css file will be imported all pages in your website */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  background-color: pink;
+}
+
+.header-logo__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-nav-items {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.header-nav-item__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  background-color: grey;
+  color: white;
+}
+
+.main {
+  text-align: center;
+}
