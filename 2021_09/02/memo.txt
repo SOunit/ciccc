@@ -1,0 +1,62 @@
+// how to communicate PC
+- low level code
+- hardware understand them.
+0001010100101, READ
+0100100101001, WRITE
+
+// middle level
+- less code, more function
+- difficult to understand yet
+
+// high level code
+- less code, more work
+const some = 0;
+
+// driver
+keyboard -> driver(translater) -> PC
+
+// operating system
+// ms dos = command line pc
+
+
+// cli
+1. skip words
+    ctrl + ->
+2. move cursor
+    alt + mouse
+3. delete
+    ctrl + u
+4. clear history
+    command + k
+5. man
+    manual
+    man man
+
+tmus
+echo = print
+pwd
+cd
+
+// overwrite
+echo "some text to write" > hello.txt
+
+// add text
+echo "some text to write" >> hello.txt
+
+
+// VIM
+escape
+:wq
+:q!
+
+// combine command
+mkdir mydir3 && cd mydir3
+
+// be careful its delete files and folders
+// -r recursive
+// -f force
+rm -rf <directory name>
+
+// rename
+mv <existing file name> <new file name>
+cp <existing file name> <new file name>
