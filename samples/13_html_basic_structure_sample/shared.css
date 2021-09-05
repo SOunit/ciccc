@@ -20,6 +20,10 @@ body {
   color: white;
 }
 
+.header__title {
+  font-size: 1rem;
+}
+
 .nav-items {
   /* border: 1px solid blue; */
   display: flex;
