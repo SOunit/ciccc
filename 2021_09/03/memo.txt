@@ -1,0 +1,16 @@
+// os, bit, bites
+
+// GUI
+lower level to higher level
+easy to use computer
+open the door to public
+
+// numbers
+- decimal = deci = 10
+- hexadecimal = hexa deci = 16
+- hex = 6
+
+oxta = 8
+
+// bits
+

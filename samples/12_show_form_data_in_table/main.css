@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.form__label,
+.form__input,
+.form__button {
+  display: block;
+  width: 100%;
+}
+
+.form__button {
+  margin: 1rem 0;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.table th,
+.table td {
+  border: 2px solid rgb(0, 0, 136);
+  padding: 0.5rem;
+}
+
+.table--hover {
+  border: 3px solid red;
+  background-color: salmon;
+}
