@@ -10,5 +10,31 @@ body {
 }
 
 /* header */
+.header {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+}
+
+.nav-items {
+  /* border: 1px solid blue; */
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  /* border: 1px solid blue; */
+  margin: 0.2rem;
+}
+
+.nav-item__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
 
 /* footer */
