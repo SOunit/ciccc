@@ -1,3 +1,11 @@
+// network summary
+sending data
+receiving data
+address is important
+address need to be understand by machine
+address by IPv4, IPv6
+
+
 // network
 
 // LAN cable
