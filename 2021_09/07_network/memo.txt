@@ -1,0 +1,28 @@
+// network
+
+// LAN cable
+Local
+Area
+Network
+
+// cable
+receive 0, 1
+send 0, 1
+
+// Router
+one type of PC
+
+// Booster
+
+// how to send 0, 1
+radio, sample
+0 wide
+1 narrow
+
+// history
+
+// IPA = target
+Internet
+Protocol
+Addresses
+
