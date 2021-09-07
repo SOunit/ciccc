@@ -4,6 +4,10 @@ receiving data
 address is important
 address need to be understand by machine
 address by IPv4, IPv6
+in IPv4, IP address is limited
+in IPv4, router, public IP, private IP, NAT for offer 
+more IP address, or use them more efficiently
+in IPv6, there's a lot of IP addresses.
 
 
 // network
