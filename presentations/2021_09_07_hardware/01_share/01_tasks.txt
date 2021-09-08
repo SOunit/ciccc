@@ -1,0 +1,9 @@
+1. History : yuki
+    ( to introduce old and new,  concepts LCD, LED)
+2. LCD : sho
+    ( how to display images and colors)
+3. LED : azar
+    ( what’s the difference from CRT)
+
+github
+

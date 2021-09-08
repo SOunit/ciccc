@@ -1,4 +1,0 @@
-// questions
-- from 0, 1 to data
-- image loader, slow to fast, why was it slow?
-- wawawa, what's tcp/ip?
