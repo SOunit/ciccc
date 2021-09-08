@@ -1,0 +1,41 @@
+// main focus
+- how to show images in LCD
+- how to show color in LCD
+
+// outline
+- what is LCD
+- what is liquid crystal
+- first liquid crystal
+- how useful liquid crystal
+- how to show images in LCD
+- how to show color in LCD
+
+// page 1
+what is LCD?
+
+Liquid
+Crystal
+Display
+
+the common display model.
+
+// page 2
+what is liquid crystal
+
+Liquid crystals (LCs) are a state of matter 
+which has properties between those of conventional liquids and those of solid crystals. 
+For instance, a liquid crystal may flow like a liquid, 
+but its molecules may be oriented in a crystal-like way. (wikipedia)
+
+// page 3
+first Liquid Crystal
+
+found by Friedrich Reinitzer, Austrian botanist in 1888.
+he found [ethyl benzoate] some thing chemical changes from solid crystal, to sticy liquid, to liquid state when it's heated.
+German physicist, Otto Lehmann named the behavior Liquid Crystal.
+
+// page 4
+how to display items in screen
+
+
+
