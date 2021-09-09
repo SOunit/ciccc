@@ -1,0 +1,24 @@
+// commands
+
+// git repo
+
+// show hidden files
+cmd shift .
+
+
+// save
+for one file
+
+// commmit
+for multiple files and folders
+
+// separating a concern
+
+// git
+working
+staged
+repository
+
+// history
+git log
+git log --oneline
