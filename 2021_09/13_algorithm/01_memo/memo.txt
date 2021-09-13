@@ -1,0 +1,50 @@
+// 3 weeks
+
+// 1st week
+// syntax
+// function
+
+// 2nd week
+// algorithm basic
+
+// 3rd week
+// algorithm advanced
+
+// algorithm
+some input
+process
+desired output
+
+// pseudo code?
+simple version of programming code
+appliable to any language
+
+// flow of control
+1. sequence
+    step by step
+2. branching / selection
+    binary desicion
+    if / switch
+3. loop / repetition
+
+// flow chart
+- diagram
+
+- border-radius / overal?
+    start
+    end
+- rectangle
+    process
+- diamond
+    yes / no
+- parallelogram
+    input / output
+- circle
+    sign for connection
+    not importtant
+- flow lines
+    show direction
+
+// sample
+START : overal
+INPUT r: parallelogram
