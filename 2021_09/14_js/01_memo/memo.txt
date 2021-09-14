@@ -1,0 +1,58 @@
+[?]// variable name
+- bad practice, why?
+user_name
+
+// run js without html file
+node <js file name>
+
+[?]// hoisting
+pull something up, like fishing
+
+- order can changed?
+define
+call
+
+call
+define
+
+// statement
+function b(){}
+// expression
+// anonymous function
+var b = function(){}
+
+[?]// scope
+function scope
+block scope
+
+// scope
+- global
+- local
+
+// data types
+- numbers
+- string
+- boolean
+- undefined
+- null
+
+// js engine in browser
+- repl
+
+// typeof
+// return 'number'
+typeof <variable>
+
+// template variable
+``
+
+// square bracket?
+// curly braces?
+
+
+// type reference
+// result is 40
+var b = 8 * "5"
+
+// type coercion
+- 
