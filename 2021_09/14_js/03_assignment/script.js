@@ -10,18 +10,25 @@ const checkScore = (scoreForMatt, scoreForSimon, minimumScoreToPassTest) => {
     scoreForSimon >= minimumScoreToPassTest
   ) {
     console.log('both pass the test!!');
+
     // 4. if matt pass
   } else if (scoreForMatt >= minimumScoreToPassTest) {
+    // 6. name ans score
     console.log(`matt passed, his score is ${scoreForMatt}`);
+
     // 4. if simon pass
   } else if (scoreForSimon >= minimumScoreToPassTest) {
+    // 6. name ans score
     console.log(`simon passed, his score is ${scoreForSimon}`);
+
     // 5. else case (both failed)
   } else {
     console.log(`both failed`);
   }
   console.log('--------------------------');
 };
+
+// 7. check all conditions
 
 // both pass
 checkScore(80, 80, 51);
