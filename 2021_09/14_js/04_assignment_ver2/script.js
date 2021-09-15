@@ -32,6 +32,13 @@ let students = [
 ];
 evaluateStudents(students, minScore);
 
+students = [
+  { name: 'Taro', score: 80 },
+  { name: 'Simon', score: 80 },
+  { name: 'Yoshiro', score: 80 },
+];
+evaluateStudents(students, minScore);
+
 // simon only
 students = [
   { name: 'Taro', score: 40 },
@@ -46,9 +53,25 @@ students = [
 ];
 evaluateStudents(students, minScore);
 
+// taro and Y
+students = [
+  { name: 'Taro', score: 80 },
+  { name: 'Simon', score: 40 },
+  { name: 'Yoshiro', score: 90 },
+];
+evaluateStudents(students, minScore);
+
 // nobody
 students = [
   { name: 'Taro', score: 40 },
   { name: 'Simon', score: 40 },
+];
+evaluateStudents(students, minScore);
+
+// nobody
+students = [
+  { name: 'Taro', score: 40 },
+  { name: 'Simon', score: 40 },
+  { name: 'S.O.', score: 40 },
 ];
 evaluateStudents(students, minScore);
