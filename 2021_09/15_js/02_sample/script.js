@@ -141,7 +141,79 @@ for (let i = 0; i < todos.length; i++) {
   console.log(`todos[${i}].text:`, todos[i].text);
 }
 
-// map
-fruits.map((fruit, i) => {
-  console.log('map', i, fruit);
+// for of -- only arrays
+for (let fruit of fruits) {
+  console.log('for of, ', fruit);
+}
+
+// for in -- only objects
+for (let prop in person) {
+  console.log('for in', prop, 'is', person[prop]);
+}
+
+// break / continue
+for (let todo of todos) {
+  if (todo.id === 2) {
+    console.log(todo.text);
+    // break;
+    continue;
+  }
+  console.log(todo.id);
+}
+
+// Higher order array methods
+// forEach -- loops through array
+todos.forEach((todo, i) => {
+  console.log('forEach', todo, i);
 });
+
+// map -- loops through array
+// and CREATE a new array
+const newTodos = todos.map((todo, i) => {
+  todo.new = true;
+  return todo;
+});
+console.log(newTodos);
+
+// reference, pointer only
+// primitive
+// when copy, reference just copy reference
+// primitive copy data itself
+
+// filter - returns an array based on a CONDITION
+// true stay, false drop
+console.log(fruits);
+const newFruits = fruits.filter((fruit) => fruit !== 'pear');
+console.log(newFruits);
+
+// conditionals
+const num = 30;
+const conditionNum = 10;
+if (num === conditionNum) {
+  console.log('num', conditionNum);
+} else if (num > conditionNum) {
+  console.log(`'num > ${conditionNum}'`);
+} else {
+  console.log(`numm is less than ${conditionNum}`);
+}
+
+const color = 'black';
+
+// switch
+switch (color) {
+  case 'red':
+    console.log('switch', `red`);
+    break;
+  case 'blue':
+    console.log('switch', `blue`);
+    break;
+  case 'green':
+    console.log('switch', `green`);
+    break;
+  default:
+    console.log('switch', 'I dont know');
+}
+
+// ternary operator
+const result = color === 'red' ? 'turnary red' : 'turnary not red';
+console.log(result);
