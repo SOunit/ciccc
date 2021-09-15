@@ -67,8 +67,9 @@ const person = {
   lastName: 'Doe',
   age: 45,
   hobbires: ['book', 'water'],
+  // embedded object
   address: {
-    city: 'something',
+    city: 'city something',
     street: '681 Granville',
     postal: '444-5555',
     province: 'BC',
@@ -76,3 +77,71 @@ const person = {
 };
 
 console.log(person);
+console.log(person.age);
+console.log(person.hobbires[1]);
+console.log(person.address.city);
+
+// add a property
+person.email = 'test@test.com';
+console.log(person.email);
+
+const todos = [
+  {
+    id: 1,
+    text: 'Take out trash1',
+    isComplete: false,
+  },
+  {
+    id: 2,
+    text: 'Take out trash2',
+    isComplete: false,
+  },
+  {
+    id: 3,
+    text: 'Take out trash3',
+    isComplete: true,
+  },
+];
+
+// get specific object value
+console.log(todos[1].text);
+
+// JSON(js build-in object)
+console.log(todos);
+const jsonData = JSON.stringify(todos);
+console.log(jsonData);
+console.log(JSON.parse(jsonData));
+
+// loops
+// classic for loop
+for (let i = 0; i < 10; i++) {
+  console.log('classic for', i);
+}
+
+// while
+(() => {
+  let i = 0;
+  while (i < 10) {
+    console.log('while', i);
+    i++;
+  }
+})();
+
+// do..while
+(() => {
+  let i = 100;
+  do {
+    console.log('do while', i);
+    i++;
+  } while (i < 10);
+})();
+
+// loop
+for (let i = 0; i < todos.length; i++) {
+  console.log(`todos[${i}].text:`, todos[i].text);
+}
+
+// map
+fruits.map((fruit, i) => {
+  console.log('map', i, fruit);
+});
