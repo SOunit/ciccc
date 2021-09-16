@@ -1,0 +1,42 @@
+// js for behavior
+
+// instruction
+
+// object
+- property
+- events
+- method
+
+// statement 
+    end with ;
+    const some = 10;
+// block 
+    {}
+
+// pascal case
+// camel case
+// snake case
+
+// comment
+initial, explain what the code does
+
+// open developer tool
+- cmd option i
+
+// variable
+- temporary
+- saved in RAM (temporary save strage)
+
+// js engine
+rapel
+
+// data types
+
+// array literal
+    less methods
+// array constructor
+    more methods
+
+// wednesday, friday
+// 1 to 4 pm?
+
