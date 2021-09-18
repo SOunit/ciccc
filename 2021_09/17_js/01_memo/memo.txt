@@ -1,0 +1,35 @@
+// curly braces?
+// squere bracket
+// parentacies?
+
+
+// memory and variable
+
+// this
+1. in a function, this is pointing global object
+global scope
+function
+var
+
+this -> window object
+
+var witdh = 600;
+var hegiht = 400;
+var showWidth = function () {
+    console.log(this.width); 
+}
+
+2. an method of an object
+this -> object
+
+var shape = {
+    width: 600;
+    height: 400;
+    getArea: function(){
+        return this.width + this.height;
+    }
+}
+
+// call stack
+in: 1st, 2nd, 3rd
+out: 3rd, 2nd, 1st
