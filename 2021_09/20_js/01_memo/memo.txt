@@ -1,0 +1,16 @@
+// conditional operators
+
+// short-curcit
+skip in && and ||
+
+// type coercion
+
+
+// back slash
+// option + ¥ = \
+
+'\aaa';
+
+// code challenging
+1. freeCodeCamp
+2. leetCode

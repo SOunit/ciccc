@@ -1,0 +1,4 @@
+// back slash
+// option + ¥ = \
+
+'\aaa';
