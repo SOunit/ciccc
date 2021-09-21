@@ -1,0 +1,41 @@
+// how js work under the hood
+
+// js engine in browser
+// syntax parser(interpretor)
+
+// parser -> lexical scope -> execution
+
+// lexical scope
+where variable sits
+
+// execution context
+a container, which manages the code
+
+// global execution context creates...
+- window(global object)
+- this
+
+//　execution stack
+- execution context ( function b )
+- execution context ( function a )
+- global execution context
+
+// scope / scope chain
+try to find variable
+if not exist, go out to find until global execution context
+NOT TO INSIDE...
+
+// execution context
+- creation stage
+    - global object
+    - this
+    - scope chain
+    - asign undefined to variables 
+        (hoisting = create data in memory, 
+            value is undefined if variable
+            value is function if function)
+- execution stage
+    - 
+
+// objects vs primitives
+
