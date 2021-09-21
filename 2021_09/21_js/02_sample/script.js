@@ -47,3 +47,45 @@ check('mountain');
 check('iPhone');
 check('StephJobs');
 check('a bottle of water');
+
+const people = [
+  { name: 'a', age: 10 },
+  { name: 'b', age: 10 },
+  { name: 'c', age: 10 },
+  { name: 'd', age: 10 },
+];
+
+console.log(
+  'every',
+  people.every((person) => person.age >= 20)
+);
+console.log(
+  'some',
+  people.some((person) => person.age >= 20)
+);
+
+const nums = [100, 200, 300];
+
+// accumulator, current
+nums.reduce((sum, num) => {
+  console.log(sum);
+  console.log(num);
+  return sum + num;
+});
+
+people.reduce((acc, current) => {
+  console.log('acc', acc);
+  console.log('current', current);
+  return acc + current.age;
+}, 0);
+
+var firstNames = ['John', 'Mary', 'Joseph'];
+var lastNames = ['Smith', 'Doe', 'Brown'];
+
+var fullNames = firstNames.reduce((accumulator, current, index) => {
+  console.log('accumulator', accumulator);
+  accumulator.push(current + lastNames[index]);
+  return accumulator;
+}, []);
+
+console.log(fullNames);
