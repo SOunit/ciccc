@@ -270,6 +270,39 @@
     console.log('Map key', key);
   });
 
+  // like array
+  for (let data of mapData) {
+    console.log(data);
+    console.log(data[0]);
+    console.log(data[1]);
+  }
+
+  for (let key of mapData.keys()) {
+    console.log(key);
+    console.log(mapData.get(key));
+  }
+
+  console.log('map entries');
+  for (let value of mapData.entries()) {
+    console.log('value', value);
+    console.log('value[0]', value[0]);
+    console.log('value[1]', value[1]);
+  }
+
+  console.log('map entries destruction');
+  for (let [key, value] of mapData.entries()) {
+    console.log('key', key);
+    console.log('value', value);
+  }
+
   mapData.clear();
   console.log('clear Map', mapData);
 }
+
+// SET
+console.log('SET -------------');
+const setData = new Set();
+console.log('new Set()', setData);
+
+setData.add('John');
+console.log('Set add', setData);
