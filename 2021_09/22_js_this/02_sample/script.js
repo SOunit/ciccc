@@ -228,3 +228,48 @@
 
   aboutMe2(person);
 }
+
+{
+  console.log('Map ----------------');
+  const people = [
+    { id: 1, name: 'Jack1' },
+    { id: 2, name: 'Jack2' },
+    { id: 3, name: 'Jack3' },
+    { id: 4, name: 'Jack4' },
+    { id: 5, name: 'Jack5' },
+  ];
+
+  const mapData = new Map();
+  console.log('new Map', mapData);
+
+  people.forEach((person) => mapData.set(person.id, person));
+  console.log('set Map', mapData);
+
+  people.push({ id: 6, name: 'Jack6' });
+  people.push({ id: 7, name: 'Jack7' });
+  people.push({ id: 8, name: 'Jack8' });
+  people.push({ id: 9, name: 'Jack9' });
+
+  people.forEach((person) => mapData.set(person.id, person));
+  console.log('set Map again', mapData);
+
+  mapData.delete(1);
+  mapData.delete(2);
+  mapData.delete(3);
+  console.log('delete Map', mapData);
+
+  console.log('Map has key 1 ?', mapData.has(1));
+  console.log('Map has key 7 ?', mapData.has(7));
+
+  console.log('Map get key 7', mapData.get(7));
+
+  console.log('Map size', mapData.size);
+
+  mapData.forEach((value, key) => {
+    console.log('Map value', value);
+    console.log('Map key', key);
+  });
+
+  mapData.clear();
+  console.log('clear Map', mapData);
+}
