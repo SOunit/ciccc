@@ -166,6 +166,7 @@
     const args = Array.prototype.slice.call(arguments);
 
     console.log('a ----------------');
+    // almost same data, why you do this?
     console.log(arguments);
     console.log(args);
 
@@ -220,4 +221,10 @@
   };
 
   aboutMe(person);
+
+  const aboutMe2 = ({ name, age }) => {
+    console.log(name, age);
+  };
+
+  aboutMe2(person);
 }
