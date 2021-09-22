@@ -1,0 +1,223 @@
+{
+  console.log('hi from js');
+
+  const name = 'John';
+  let age = 28;
+  let profession = 'instructor';
+
+  function personES5() {
+    console.log(
+      'My name is ' +
+        name +
+        ', and ' +
+        age +
+        " years old and I'm a /an " +
+        profession
+    );
+  }
+
+  personES5();
+
+  function personES6() {
+    console.log(`My name is ${name}, I'm ${age} and I'm a / an ${profession}`);
+  }
+
+  personES6();
+
+  let greet = 'Hello world';
+  console.log(`greet.startsWith('Hello')`, greet.startsWith('Hello'));
+  console.log(`greet.endsWith('world')`, greet.endsWith('world'));
+  console.log(`greet.includes('wo')`, greet.includes('wo'));
+  console.log(`greet.repeat(3)`, greet.repeat(3));
+}
+
+{
+  const numbers = [2, 4, 6, 8];
+  let doubles = numbers.map((number) => number * 2);
+  console.log(doubles);
+
+  let doubles2 = numbers.map(function (number) {
+    return number * 2;
+  });
+  console.log(doubles2);
+}
+
+{
+  const numbers = [0];
+  console.log(numbers);
+}
+
+{
+  const numbers = [1, 2, 3, 4, 5];
+  const result = numbers.reduce((accumulator, num) => accumulator + num);
+  console.log(result);
+}
+
+{
+  var personES5 = {
+    firstName: 'Jack',
+    lastName: 'Pearson',
+    getFullName: function () {
+      var _self = this;
+      return function () {
+        console.log(this);
+        console.log(_self);
+      };
+    },
+    getFullName2: function () {
+      return function () {
+        console.log(this);
+      }.bind(this);
+    },
+  };
+
+  personES5.getFullName()();
+  personES5.getFullName2()();
+
+  const personES6 = {
+    firstName: 'Jack',
+    lastName: 'Pearson',
+    // es5 in method gives this to object reference
+    getFullName: function () {
+      var _self = this;
+      console.log(this);
+      return () => {
+        console.log(this);
+        console.log(_self);
+      };
+    },
+    // es6 method gives no connection to object
+    getFullName2: () => {
+      console.log(this);
+      return () => {
+        console.log(this);
+      };
+    },
+  };
+
+  personES6.getFullName()();
+  personES6.getFullName2()();
+}
+
+{
+  function personES5(firstName, lastName, profession) {
+    if (firstName === undefined) {
+      firstName = 'default firstName';
+    }
+    if (lastName === undefined) {
+      lastName = 'default lastName';
+    }
+    if (profession === undefined) {
+      profession = 'default profession';
+    }
+    console.log(`${firstName} ${lastName} ${profession}`);
+  }
+
+  personES5();
+  personES5('a', 'b', 'c');
+
+  function personES6(
+    firstName = 'firstName',
+    lastName = 'lastName',
+    profession = 'profession'
+  ) {
+    console.log(`${firstName} ${lastName} ${profession}`);
+  }
+  personES6();
+  personES6('a', 'b', 'c');
+}
+
+{
+  console.log('spread -----------------');
+
+  // ES5
+  const numbers1 = [1, 2, 3, 4];
+  const numbers2 = [5, 6, 7, 8];
+  let numbers3 = [];
+  numbers3 = numbers1.concat(numbers2);
+  console.log(numbers3);
+
+  // ES6
+  numbers3 = [-2, -1, 0, ...numbers1, 100, 200, 300, ...numbers2, 9, 10, 11];
+  console.log(numbers3);
+
+  // spread
+  // spread is shallow copy
+  const people = ['a', 'b', 'c'];
+  const newPeople = [...people, 'd', 'e'];
+  console.log(people);
+  console.log(newPeople);
+
+  const person = { name: 'name', age: 30 };
+  const newPerson = { ...person, test: 'test' };
+  console.log(person);
+  console.log(newPerson);
+
+  const deepNums = [[1, 2, 3], [4, 5, 6], [7, 8, 9], 10, 11, 12];
+  console.log([...deepNums]);
+  const deepPeople = [{ name: 'test', test: { t: ['t', 't'] } }];
+  console.log({ ...deepPeople });
+}
+
+{
+  // without ES6, with ES5
+  const a = function (x, y) {
+    // why you do this?
+    const args = Array.prototype.slice.call(arguments);
+
+    console.log('a ----------------');
+    console.log(arguments);
+    console.log(args);
+
+    console.log(x, y, arguments[2], arguments[3]);
+    console.log(x, y, args[2], args[3]);
+    console.log(x, y);
+    console.log(x + y);
+  };
+  a(10, 20, 30, 40);
+
+  const b = (x, y, ...rest) => {
+    console.log('b ----------------');
+    console.log(x, y);
+    console.log(x + y);
+    console.log('rest', ...rest);
+    console.log('rest[2]', rest[0]);
+    console.log('rest[3]', rest[1]);
+  };
+  b(10, 20, 30, 40);
+
+  const family = (lastName, ...names) => {
+    console.log(names);
+    names.forEach((name) => console.log(`${name} ${lastName}`));
+  };
+
+  family('Smith', 'Jane', 'Sally', 'John', 'Derick');
+}
+
+{
+  const arr = [10, 20, 30, 40, 50, 60];
+  const ten = arr[0];
+  const twenty = arr[1];
+  console.log(ten, twenty);
+
+  const [a, b, , , e] = arr;
+  console.log(a, b, e);
+
+  const [f, g, , , ...items] = arr;
+  console.log(f, g, items);
+
+  const person = { name: 'name', age: 30 };
+  const firstName = person.firstName;
+  const lastName = person.lastName;
+  console.log(firstName, lastName);
+
+  const { name, age } = person;
+  console.log(name, age);
+
+  const aboutMe = (params) => {
+    const { name, age } = params;
+    console.log(name, age);
+  };
+
+  aboutMe(person);
+}
