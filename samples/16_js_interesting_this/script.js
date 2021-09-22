@@ -1,10 +1,12 @@
-const dispQuiz = (title, cb) => {
-  console.log(`---- ${title} ----`);
-  cb();
-};
+// 3. global context => this points window object
+{
+  console.log('global context');
+  console.log(this);
+}
 
 // 1. method + function =>  this is pointing object which has method
-dispQuiz('method + function', () => {
+{
+  console.log('method + function');
   var obj = {
     name: 'name',
     thisFunc1: function () {
@@ -21,10 +23,11 @@ dispQuiz('method + function', () => {
 
   obj.thisFunc1();
   obj.address.thisFunc2();
-});
+}
 
 // 2. method + arrow function =>  this is pointing empty object?
-dispQuiz('method + arrow function', () => {
+{
+  console.log('method + arrow function');
   var obj = {
     name: 'name',
     address: {
@@ -41,7 +44,18 @@ dispQuiz('method + arrow function', () => {
 
   obj.address.thisFunc();
   obj.thisFunc2();
-});
+}
 
-// 3. global context => this points window object
-dispQuiz('global context', () => console.log(this));
+{
+  console.log('function in method');
+  var obj = {
+    test: function () {
+      console.log('test', this);
+      function test2() {
+        console.log('test2', this);
+      }
+      test2();
+    },
+  };
+  obj.test();
+}

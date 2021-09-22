@@ -163,6 +163,7 @@
   // without ES6, with ES5
   const a = function (x, y) {
     // why you do this?
+    // to create new array, this is how in ES5
     const args = Array.prototype.slice.call(arguments);
 
     console.log('a ----------------');
