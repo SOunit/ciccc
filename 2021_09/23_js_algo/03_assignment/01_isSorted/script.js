@@ -24,6 +24,7 @@
   const isSorted = (arr) => {
     console.log('isSorted ----------');
     console.log('arr', arr);
+
     console.log('isDesc(arr)', isDesc(arr));
     console.log('isAsc(arr)', isAsc(arr));
 
