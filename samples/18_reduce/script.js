@@ -43,6 +43,7 @@
   ];
 
   // SAMPLE1: always return object
+  // accumulator is object, so you can't calculate
   let total = cart.reduce((total, item) => {
     console.log(total);
     // you need to return accumulator(= total in this sample)
@@ -51,9 +52,19 @@
   console.log(total);
 
   // SAMPLE2: always return 0
+  // set 0 as initial value to calculate
   total = cart.reduce((total, item) => {
     console.log(total);
     return total;
     // set initial accumulator value is 0
   }, 0);
+
+  // SAMPLE3: easy reducer
+  // arr num is number, so you don't need to set initialize value
+  const easyNums = [10, 20, 30, 40, 50];
+  const sum = easyNums.reduce((acc, num) => {
+    console.log('acc', acc);
+    return acc + num;
+  });
+  console.log('sum', sum);
 }
