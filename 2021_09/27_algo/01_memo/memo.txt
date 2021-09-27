@@ -1,0 +1,49 @@
+// scalable code
+big O
+
+// big O Notation
+big omicron
+
+// big-o complexity chart
+n = number of input to function
+
+// -- bad --
+// O(n!) - awful
+// O(2^n) - awful
+// O(n log n) - bad
+// -- good --
+// O(n) - fair
+// O(log n), O(1) - good
+
+
+// runtime complexity
+
+// O(n) - Linear Time - fair
+// O(1) - Constant Time - good
+// O(n^2) - quadratic Time - awful
+
+// Simplifying Big O
+- worst case
+    in search, target is the last one
+- remove constants
+- different terms for inputs
+- drop non dominance
+
+// Space Complexity
+focusing on memory, not execution time
+
+// space complexity caused by
+- variables
+- data structures = array
+- function call
+- allocations
+
+// Logarithms
+
+// Search Algorithms
+- Linear Search
+    one by one
+- Binary Search
+    half eliminate, half check
+    sorted array only
+- 
