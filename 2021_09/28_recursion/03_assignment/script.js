@@ -95,3 +95,4 @@ console.log(isPalindrome('amanaplanacanalpandemonium'));
 // mainly for interview
 // or for machine code
 // for very advanced
+// recursive code takes a lot of resource in space complexity perspective
