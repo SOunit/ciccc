@@ -85,3 +85,13 @@ console.log(isPalindrome('foobar'));
 console.log(isPalindrome('tacocat'));
 console.log(isPalindrome('amanaplanacanalpanama'));
 console.log(isPalindrome('amanaplanacanalpandemonium'));
+
+// Questions
+// 1. Is there any recursive unique code?
+// 2. is recursive always replacable by for loop?
+// 3. any merit using recursive instead of loop?
+
+// Answer
+// mainly for interview
+// or for machine code
+// for very advanced
