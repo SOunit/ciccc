@@ -1,0 +1,16 @@
+// recursion
+popular topic in interview
+
+// recursive search
+when you search file, recursive search
+
+// recursive search in command line
+ls -R
+
+// recursion = call itself
+referencing to itself
+- a function which call itself
+
+// base case
+condition where function ends
+
