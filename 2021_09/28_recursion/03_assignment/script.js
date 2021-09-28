@@ -13,6 +13,7 @@ function power(base, exponent) {
   return base * power(base, exponent - 1);
 }
 
+console.log('01 power-----------------');
 console.log(power(2, 0));
 console.log(power(2, 2));
 console.log(power(2, 4));
@@ -36,6 +37,7 @@ function productOfArray(arr) {
   return num * productOfArray(arr);
 }
 
+console.log('02 productOfArray-----------------');
 console.log(productOfArray([1, 2, 3]));
 console.log(productOfArray([1, 2, 3, 10]));
 
@@ -58,6 +60,7 @@ function reverse(str) {
 
   return char + reverse(strArr.join(''));
 }
+console.log('03 reverse-----------------');
 console.log(reverse('awesome'));
 console.log(reverse('rithmschool'));
 
@@ -76,6 +79,7 @@ function isPalindrome(str) {
   // add whatever parameters you deem necessary - good luck!
   return reverse(str) === str;
 }
+console.log('04 isPalindrome-----------------');
 console.log(isPalindrome('awesome'));
 console.log(isPalindrome('foobar'));
 console.log(isPalindrome('tacocat'));
