@@ -1,0 +1,9 @@
+// how to solve recursive quiz
+1. create base case
+2. change argument
+3. the image is like
+    1 + func(10)
+    1 + 10 + func(9)
+    1 + 10 + 9 + func(8)
+
+// sort
