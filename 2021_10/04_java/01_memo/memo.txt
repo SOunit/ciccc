@@ -1,0 +1,8 @@
+// original issue
+1. linux
+2. windows
+3. max os
+compile for each environment.
+
+// Java introduce the laywer.
+- Java Virtual Machine
