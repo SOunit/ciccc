@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantics</title>
+    <style>
+      body{
+          font-family: Arial, Helvetica, sans-serif;
+          color: #333;
+          line-height: 1.4;
+      }  
+
+      #header {
+         margin-bottom: 15px;
+         background: #333;
+         color: #fff;
+         padding: 10px; 
+      }
+
+      #blog {
+          float: left;
+          width: 59%;
+      }
+
+      #sidebar {
+          float: right;
+          width: 29%;
+      }
+
+      #footer {
+          background-color: #333;
+          color: #fff;
+          padding: 10px
+      }
+
+      .clr {
+          clear: both;
+      }
+
+      .text-center {
+          display: block;
+          text-align: center;
+      }
+
+      .card {
+          border: 1px solid #ddd;
+          background-color: #f4f4f4;
+          padding: 20px;
+          margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header" class="card">
+        <h1>My Website</h1>
+        Just another website
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+        <!-- Welcome section -->
+        <div id="welcome" class="card">
+            <h2>Welcome To Our Website</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea eius explicabo in vero eveniet quod vel, quisquam deserunt iste voluptate enim illum porro modi nulla necessitatibus, rem neque consequuntur.
+                <br>
+                <br>
+                <a href="#" class="text-center">Click for more...</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div id="blog">
+        <h2>Blog</h2>
+        <div class="article">
+            <h3>Article One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quae, rem ad, dolores ratione id perspiciatis optio quidem totam dolorem at delectus, magnam odit nesciunt culpa eos accusantium? Magni, porro.</p>
+        </div>
+        <div class="article">
+            <h3>Article Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quae, rem ad, dolores ratione id perspiciatis optio quidem totam dolorem at delectus, magnam odit nesciunt culpa eos accusantium? Magni, porro.</p>
+        </div>
+        <div class="article">
+            <h3>Article Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quae, rem ad, dolores ratione id perspiciatis optio quidem totam dolorem at delectus, magnam odit nesciunt culpa eos accusantium? Magni, porro.</p>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="card">
+        <h3>Navigation</h3>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <hr>
+        <h3>Contact Us</h3>
+        <ul>
+            <li>
+                <b>Address:</b> 816 Granville St.
+            </li>
+            <li>
+                <b>Phone:</b> (555) 555-5555
+            </li>
+            <li>
+                <b>Email:</b> hoge@hoge.com
+            </li>
+        </ul>
+    </div> 
+
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p class="text-center">
+            Copyright &copy; My website 2021
+        </p>
+    </div>
+</body>
+</html>
