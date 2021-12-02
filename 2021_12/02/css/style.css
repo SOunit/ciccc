@@ -1,13 +1,14 @@
 /* Reset */
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 /* Main Styling */
-html,body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
 
@@ -16,7 +17,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   padding-bottom: 20px;
 }
 
@@ -29,7 +32,19 @@ p {
   margin: auto;
   max-width: 1100px;
   overflow: auto;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#navbar ul.nav-items li a {
+  padding: 0;
 }
 
 .text-primary {
@@ -85,9 +100,15 @@ p {
 }
 
 /* Padding */
-.py-1 { padding: 10px 0; }
-.py-2 { padding: 20px 0; }
-.py-3 { padding: 30px 0; }
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
 
 /* Navbar */
 #navbar {
@@ -120,7 +141,7 @@ p {
   text-align: center;
 }
 
-#navbar ul li a:hover, 
+#navbar ul li a:hover,
 #navbar ul li a.current {
   background: #444;
   color: #f17e0a;
@@ -128,7 +149,7 @@ p {
 
 /* Showcase */
 #showcase {
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
   height: 600px;
 }
 
@@ -151,18 +172,13 @@ p {
 /* Home Info */
 #home-info {
   height: 450px;
-}
-
-#home-info .info-img {
-  float: left;
-  width: 50%;
-  background: url('../img/photo-1.jpg') no-repeat center bottom/cover;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #home-info .info-content {
   float: right;
-  width: 50%;
+  width: 100%;
   height: 100%;
   text-align: center;
   padding: 50px 30px;
@@ -174,11 +190,16 @@ p {
 }
 
 /* Features */
+#features {
+  display: flex;
+  flex-direction: column;
+}
+
 .box {
   float: left;
-  width: 33.3%;
+  width: 100%;
   padding: 50px;
-  text-align:center;
+  text-align: center;
 }
 
 .box i {
@@ -191,4 +212,50 @@ p {
   background: #444;
   color: #fff;
   padding: 20px;
+}
+
+/* for pc */
+@media (min-width: 40rem) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+
+  .nav-items {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #navbar ul.nav-items li a {
+    padding: 20px;
+  }
+
+  /* Home Info */
+  #home-info {
+    height: 450px;
+    flex-direction: row;
+  }
+
+  #home-info .info-content {
+    width: 50%;
+  }
+
+  #home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url("../img/photo-1.jpg") no-repeat center bottom/cover;
+    min-height: 100%;
+  }
+
+  #features {
+    flex-direction: row;
+  }
+
+  .box{
+    width: 33.3%;
+  }
 }
