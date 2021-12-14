@@ -1,7 +1,7 @@
 .search {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   &-bar {
     padding: 0.5rem 1rem;
@@ -13,6 +13,7 @@
 
 @media (min-width: 40rem) {
   .search {
+    padding: 2rem 0;
     &-bar {
       max-width: 30rem;
     }

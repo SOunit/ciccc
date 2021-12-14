@@ -44,7 +44,7 @@ body {
 .search {
   display: flex;
   justify-content: center;
-  padding: 2rem 0; }
+  padding: 1rem 0; }
   .search-bar {
     padding: 0.5rem 1rem;
     width: 95%;
@@ -52,5 +52,7 @@ body {
     border: none; }
 
 @media (min-width: 40rem) {
-  .search-bar {
-    max-width: 30rem; } }
+  .search {
+    padding: 2rem 0; }
+    .search-bar {
+      max-width: 30rem; } }
