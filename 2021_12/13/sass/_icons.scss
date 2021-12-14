@@ -1,0 +1,49 @@
+#icons-section {
+  display: flex;
+  justify-content: center;
+  .icons {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .icon {
+      width: 33%;
+      &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        text-decoration: none;
+        &:hover {
+          background-color: #646464;
+        }
+      }
+      &__image {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        overflow: hidden;
+      }
+      &__text {
+        text-align: center;
+        margin: 0.5rem 0;
+        padding: 0;
+        color: #fff;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  #icons-section {
+    .icons {
+      max-width: 28rem;
+      .icon {
+        width: 24%;
+      }
+    }
+  }
+}

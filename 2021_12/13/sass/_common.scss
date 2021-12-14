@@ -1,4 +1,13 @@
 // common
-.image-wrapper img {
-  width: 100%;
+.image-wrapper {
+  img {
+    width: 100%;
+  }
+}
+
+.image-wrapper--scale {
+  overflow: hidden;
+  img {
+    transform: scale(1.5);
+  }
 }

@@ -9,6 +9,11 @@ body {
 .image-wrapper img {
   width: 100%; }
 
+.image-wrapper--scale {
+  overflow: hidden; }
+  .image-wrapper--scale img {
+    transform: scale(1.5); }
+
 .header {
   display: flex;
   justify-content: flex-end;
@@ -24,8 +29,6 @@ body {
     height: 1.8rem;
     border-radius: 1.8rem;
     overflow: hidden; }
-    .header__logo img {
-      transform: scale(1.5); }
 
 .hero-section {
   display: flex;
@@ -56,3 +59,41 @@ body {
     padding: 2rem 0; }
     .search-bar {
       max-width: 30rem; } }
+
+#icons-section {
+  display: flex;
+  justify-content: center; }
+  #icons-section .icons {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    #icons-section .icons .icon {
+      width: 33%; }
+      #icons-section .icons .icon__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        text-decoration: none; }
+        #icons-section .icons .icon__link:hover {
+          background-color: #646464; }
+      #icons-section .icons .icon__image {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        overflow: hidden; }
+      #icons-section .icons .icon__text {
+        text-align: center;
+        margin: 0.5rem 0;
+        padding: 0;
+        color: #fff;
+        font-size: 0.8rem; }
+
+@media (min-width: 40rem) {
+  #icons-section .icons {
+    max-width: 28rem; }
+    #icons-section .icons .icon {
+      width: 24%; } }
