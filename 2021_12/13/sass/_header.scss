@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+
+  &__link {
+    text-decoration: none;
+    margin: 0.3rem 0.5rem;
+    color: #fff;
+    font-size: 0.7rem;
+  }
+
+  &__logo {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 1.8rem;
+    overflow: hidden;
+    img {
+      transform: scale(1.5);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  width: 95%;
+  border-radius: 20px;
+  background-color: rgba(28, 34, 56, 1);
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 40rem) {
+  .hero{
+    max-width: 25rem;
+  }
+}

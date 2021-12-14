@@ -1,3 +1,4 @@
 .vscode
 settings.json
 students.json
+node_modules

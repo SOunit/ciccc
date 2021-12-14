@@ -1,0 +1,20 @@
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+
+  &-bar {
+    padding: 0.5rem 1rem;
+    width: 95%;
+    border-radius: 32px;
+    border: none;
+  }
+}
+
+@media (min-width: 40rem) {
+  .search {
+    &-bar {
+      max-width: 30rem;
+    }
+  }
+}
