@@ -145,6 +145,7 @@ body {
   justify-content: space-around;
   cursor: pointer;
   transition: transform 0.5s;
+  height: 100%;
 }
 .hamburger-menu .menu-line-1 {
   width: 100%;
