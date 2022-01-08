@@ -1,0 +1,65 @@
+@use "../base" as base;
+
+.cards-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 25rem);
+  //   @include base.darkBackground(0.4);
+
+  .card {
+    &:hover {
+      .card-overlay {
+        left: 0;
+      }
+    }
+    position: relative;
+    overflow: hidden;
+    &-overlay {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: -120%;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      transition: 0.7s left;
+      background-color: rgba(211, 171, 85, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &-heading {
+        font-size: 3rem;
+        color: #fff;
+      }
+      &-paragraph {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      &-btn {
+        border-radius: 2rem;
+        border: 0;
+        padding: 0.5rem 2rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgba(211, 171, 85, 0.6);
+        margin: 2rem 0;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+  }
+
+  //   .card:hover {
+  //     background-color: blue;
+  //     &-overlay {
+  //       left: 0;
+  //     }
+  //   }
+}
