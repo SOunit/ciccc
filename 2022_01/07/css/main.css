@@ -1,7 +1,42 @@
+.logo {
+  width: 110px;
+  height: 110px;
+  font-size: 70px;
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+  margin-right: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 110px;
+  height: 110px;
+}
+
+.main-name {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #bbb;
+  font-family: "Nunito", sans-serif;
+}
+
+.sub-name {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  color: #bbb;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 li {
@@ -19,6 +54,30 @@ body {
 .navbar {
   position: relative;
   z-index: 20;
+}
+.navbar .hamburger-menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  z-index: 300;
+}
+.navbar .hamburger-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.navbar .hamburger-menu .menu .menu-line {
+  width: 100%;
+  height: 4px;
+  background-color: #d3ab55;
+  transform-origin: right;
+  transition: all 0.5s 0.5s;
 }
 .navbar-navigation {
   display: flex;
@@ -131,44 +190,6 @@ body {
   right: 0;
 }
 
-.hamburger-menu {
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 10%;
-  right: 5%;
-  z-index: 300;
-}
-.hamburger-menu .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  cursor: pointer;
-  transition: transform 0.5s;
-  height: 100%;
-}
-.hamburger-menu .menu-line-1 {
-  width: 100%;
-  height: 4px;
-  background-color: #d3ab55;
-  transform-origin: right;
-  transition: all 0.5s 0.5s;
-}
-.hamburger-menu .menu-line-2 {
-  width: 100%;
-  height: 4px;
-  background-color: #d3ab55;
-  transform-origin: right;
-  transition: all 0.5s 0.5s;
-}
-.hamburger-menu .menu-line-3 {
-  width: 100%;
-  height: 4px;
-  background-color: #d3ab55;
-  transform-origin: right;
-  transition: all 0.5s 0.5s;
-}
-
 .checkbox:checked ~ .hamburger-menu .menu {
   transform: rotateZ(90deg);
 }
@@ -185,6 +206,25 @@ body {
   transform: rotateZ(40deg);
 }
 
+.main-btn {
+  font-family: "Josefin Sans", sans-serif;
+  color: #d3ab55;
+  width: 170px;
+  height: 45px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.main-btn:hover {
+  color: #000;
+  background-color: #d3ab55;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -197,42 +237,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Nunito", sans-serif;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.brand .logo {
-  width: 110px;
-  height: 110px;
-  font-size: 70px;
-  border: 3px solid #d3ab55;
-  border-radius: 50%;
-  margin-right: 20px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.brand .logo img {
-  width: 110px;
-  height: 110px;
-}
-.brand .main-name {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 50px;
-  color: #bbb;
-}
-.brand .sub-name {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 18px;
-  color: #bbb;
 }
 
 .header-banner {
@@ -257,24 +265,6 @@ body {
   font-size: 40px;
   margin-bottom: 30px;
   text-align: center;
-}
-.header-banner .main-btn {
-  font-family: "Josefin Sans", sans-serif;
-  color: #d3ab55;
-  width: 170px;
-  height: 45px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: transparent;
-  border: 1px solid #d3ab55;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-.header-banner .main-btn:hover {
-  color: #000;
-  background-color: #d3ab55;
 }
 
 .about-us {
@@ -313,6 +303,7 @@ body {
 }
 .about-us .sub-heading {
   color: #bbb;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   color: #bbb;
   margin-bottom: 30px;
@@ -323,7 +314,50 @@ body {
   color: #d3ab55;
   margin: 30px 0;
 }
-.about-us .discription {
+.about-us .description {
+  color: #bbb;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  text-align: justify;
+}
+.about-us .description::first-letter {
+  padding-left: 50px;
+}
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer .footer-social-media .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer .footer-social-media .social-media .social-media-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: color 0.7s;
+}
+.footer .footer-social-media .social-media .social-media-link:hover {
+  color: #d3ab55;
+}
+.footer .footer-copyright .footer-copyright-paragraph {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
   color: #bbb;
 }
 

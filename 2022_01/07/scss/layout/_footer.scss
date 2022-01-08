@@ -1,1 +1,44 @@
-@use "./base";
+@use "../base";
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .footer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .footer-social-media {
+    .social-media {
+      display: flex;
+      width: 300px;
+      justify-content: space-between;
+      margin-bottom: 70px;
+
+      .social-media-link {
+        text-decoration: none;
+        font-size: 50px;
+        color: $color-secondary;
+        transition: color 0.7s;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    .footer-copyright-paragraph {
+      @include textStyles();
+      font-family: $font-josefinSans;
+      font-size: 18px;
+      color: $color-secondary;
+    }
+  }
+}

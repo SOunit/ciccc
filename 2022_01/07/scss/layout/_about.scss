@@ -39,6 +39,7 @@
   }
   .sub-heading {
     color: $color-secondary;
+    font-family: $font-josefinSans;
     font-size: 40px;
     color: $color-secondary;
     margin-bottom: 30px;
@@ -49,7 +50,21 @@
     color: $color-primary;
     margin: 30px 0;
   }
-  .discription {
+  .description {
     color: $color-secondary;
+    font-family: $font-josefinSans;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+
+    &::first-letter {
+      padding-left: 50px;
+    }
   }
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 1000px) {
 }

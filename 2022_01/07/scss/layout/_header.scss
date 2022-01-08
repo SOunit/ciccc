@@ -12,41 +12,10 @@
 .brand {
   @include flexLayout();
 
-  font-family: $font-nunito;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  .logo {
-    width: 110px;
-    height: 110px;
-    font-size: 70px;
-    border: 3px solid $color-primary;
-    border-radius: 50%;
-    margin-right: 20px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      width: 110px;
-      height: 110px;
-    }
-  }
-
-  .main-name {
-    @include textStyles();
-    font-size: 50px;
-    color: $color-secondary;
-  }
-  .sub-name {
-    @include textStyles();
-    text-align: center;
-    font-size: 18px;
-    color: $color-secondary;
-  }
 }
 
 .header-banner {
@@ -71,25 +40,6 @@
     font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
-  }
-  .main-btn {
-    font-family: $font-josefinSans;
-    color: $color-primary;
-    width: 170px;
-    height: 45px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: transparent;
-    border: 1px solid $color-primary;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.4s;
-
-    &:hover {
-      color: $color-black;
-      background-color: $color-primary;
-    }
   }
 }
 
