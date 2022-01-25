@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2 id="heading">Note Manager</h2>
+        <form id="search-note"></form>
+      </header>
+      <div class="note-list">
+        <ul id="list">
+          <li>
+            <p>First Note</p>
+            <p><i class="fa fa-pencil"></i><i class="fa fa-times"></i></p>
+          </li>
+          <li>
+            <p>Second Note</p>
+            <p>
+              <i class="fa fa-pencil"></i>
+              <i class="fa fa-times"></i>
+            </p>
+          </li>
+          <li>
+            <p>Third Note</p>
+            <p>
+              <i class="fa fa-pencil"></i>
+              <i class="fa fa-times"></i>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div id="hide-list">
+        <label for="hide">Hide Notes</label>
+        <input type="checkbox" id="hide" />
+      </div>
+
+      <div id="add-notes">
+        <form id="add">
+          <input type="text" placeholder="Add a note..." id="add-input" />
+          <input type="submit" value="Add" id="add-btn" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./solution.js"></script>
+  </body>
+</html>
