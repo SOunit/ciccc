@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .imageCarousel {
+        height: 50%;
+        width: 50%;
+        margin: 20px auto;
+      }
+
+      .imageCarousel > img {
+        width: 100%;
+        opacity: 1;
+
+        transition: opacity 0.5s;
+      }
+
+      #prev-button,
+      #next-button {
+        display: inline-block;
+        padding: 10px 12px;
+        width: auto;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      #prev-button:hover,
+      #next-button:hover {
+        color: white;
+        background-color: black;
+      }
+
+      #prev-button {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        margin-left: 5px;
+      }
+      #next-button {
+        position: absolute;
+        top: 25%;
+        right: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imageCarousel">
+      <img src="./images/avocado.jpeg" class="js-image" />
+      <button id="prev-button"><</button>
+      <button id="next-button">></button>
+    </div>
+
+    <script>
+      const images = [
+        "./images/avocado.jpeg",
+        "./images/pancake.jpeg",
+        "./images/sandwich.jpeg",
+        "./images/spaghetti.jpeg",
+      ];
+
+      let currentIndex = 0;
+
+      //solution here
+
+      const swapImage = (config) => {
+        const imageTag = document.querySelector(".js-image");
+        if (config.isLeft) {
+          currentIndex += 1;
+          if (currentIndex > images.length - 1) {
+            currentIndex = 0;
+          }
+
+          imageTag.src = images[currentIndex];
+        } else {
+          currentIndex -= 1;
+          if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+          }
+
+          imageTag.src = images[currentIndex];
+        }
+      };
+
+      document.querySelector("#prev-button").addEventListener("click", () => {
+        console.log("left");
+        swapImage({ isLeft: true });
+      });
+
+      document.querySelector("#next-button").addEventListener("click", () => {
+        console.log("right");
+        swapImage({ isLeft: false });
+      });
+
+      //solution end here
+    </script>
+  </body>
+</html>
