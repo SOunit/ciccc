@@ -1,18 +1,18 @@
 # Javascript sample stack
 
-## A. react includes all of this
-
 - DOM Manipulation
 - eventListeners
 - AJAX, API
 - Array methods
 - JavaScript CSS Manipulation
 
+### A. react covers all of them
+
 # API
 
-## A. node backend server returns data from mongodb
-
 - You can create your own dummy data
+
+### A. node backend server returns data from mongodb
 
 # What should a user see
 
