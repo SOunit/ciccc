@@ -1,0 +1,90 @@
+[QA]
+1. less data from redux 
+- toolkit 
+- shallow equal? for useSelector
+- re-select? for less data?
+
+2. less render 
+- toolkit 
+- export default memo(Snack)
+
+[MoodApp / change to redux toolkit]
+- redux/toolkit has default debug setting!!
+
+[NPM i error]
+- legacy-peer-deps for old package
+
+[data-type]
+<button
+data-type={mood}
+>
+
+submitHandler = () => {
+    const mood = e.target.dataset.type;
+}
+
+[Redux toolkit]
+- simplify bootstrap part of redux
+- build-in redux-thunk, nice!
+- for mutate states
+- build-in re-select
+- action creator API
+
+[easy refactor of redux toolkit]
+- createStore(moodReducer)
+- configureStore({reducer: moodReducer})
+
+[createAction]
+- 
+
+[createReducer]
+# problems
+- no mutation
+- big switch
+
+# solution
+- use createReducer
+
+# sample
+const reducer = createReducer(INITIAL_STATE, actionsMap);
+
+// no switch!
+moodReducer = createReducer(INITIAL_STATE, {
+    // old
+    [updateMood]: (state, action) => {
+        ...state,
+        mood: action.payload
+    },
+    // new
+    [updateMood]: (state, action) => {
+        state.mood = action.payload
+    },
+}, 
+// matcher = filter function
+[], 
+// 
+(state)=>state)
+
+// TS good?
+
+// immer for direct mutation of state
+
+// slice
+- slice of state
+
+// slice image
+{[reducer], [reducer]} = ONE_GIANT_STATE_OBJECT
+
+const sliceObject = createSlice({
+    name: 'strawberry-shortcake',
+    initialState: INITIAL_STATE,
+    reducers: {
+        // object of case reducers
+    }
+})
+
+
+[syntax option]
+// createReducer
+// createSlice
+
