@@ -48,6 +48,7 @@ client.query({query: gql`
 
 # hasura
 
+- for original graphql server
 - instance graphql server
 - heroku has postgresql
 
@@ -66,3 +67,14 @@ client.query({query: gql`
 ## query
 
 - just select field in hasura GraphQL screen
+
+## apollo client refetch
+
+- can use `refetchQueries` prop in mutation
+
+```
+const data = await addTodo({
+    variables: {text: todoText},
+    refetchQueries: [{query: GET_TODOS}]
+})
+```
