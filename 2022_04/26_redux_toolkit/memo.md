@@ -16,3 +16,8 @@ https://github.com/M-0921/react601
 ## command
 
 npx create-react-app project-name --template redux
+
+## createReduxThunk
+
+- use `extraReducer`
+- refactor using `createReduxThunk`
