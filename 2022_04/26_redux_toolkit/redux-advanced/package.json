@@ -16,6 +16,7 @@
     "react-dom": "^18.0.0",
     "react-redux": "^8.0.1",
     "react-scripts": "5.0.1",
+    "react-twitter-embed": "^4.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
