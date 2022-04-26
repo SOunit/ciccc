@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import {
+  Alert,
+  AlertDescription,
+  AlertIcon,
+  AlertTitle,
+  CloseButton,
   Flex,
   IconButton,
   Input,
@@ -19,7 +24,7 @@ export const Tweets = () => {
   const [searchValue, setSearchValue] = useState("");
   // const [data, setData] = useState([]);
   const dispatch = useDispatch();
-  const { tweets, isLoading } = useSelector((state) => state.tweets);
+  const { tweets, isLoading, error } = useSelector((state) => state.tweets);
   const maxResults = useSelector((state) => {
     return state.maxResults;
   });
@@ -32,6 +37,19 @@ export const Tweets = () => {
       setSearchValue("");
     }
   };
+
+  if (error) {
+    return (
+      <Alert status="error">
+        <AlertIcon />
+        <AlertTitle mr={2}>An error occurred!</AlertTitle>
+        <AlertDescription>
+          Unable to fetch tweets. Please try again later.
+        </AlertDescription>
+        <CloseButton position={"absolute"} right="8px" top="8px" />
+      </Alert>
+    );
+  }
 
   return (
     <>
