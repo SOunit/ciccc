@@ -1,8 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+
+import maxResultsReducer from "../features/maxResults/MaxResultSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    maxResults: maxResultsReducer,
   },
 });
