@@ -3,30 +3,34 @@
 <h1>Todos (<%= model.length %>)</h1>
 
 <div class="table-responsive-sm">
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>
-                    <a href="/create" class="btn btn-sm btn-success">Create</a>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <% for(const todo of model){ %>
-                <tr>
-                    <td><%= todo.Title %></td>
-                    <td>
-                        <a href="/edit/<%= todo.ID %>" class="btn btn-sm btn-warning">Edit</a>
-                        <a href="/delete/<%= todo.ID %>?_method=DELETE" class="btn btn-sm btn-danger">Delete</a>
-                        <!-- <form action="/delete/<%= todo.ID %>?_method=DELETE" method="post">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>
+          <a href="/create" class="btn btn-sm btn-success">Create</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(const todo of model){ %>
+      <tr>
+        <td><%= todo.Title %></td>
+        <td>
+          <a href="/edit/<%= todo.ID %>" class="btn btn-sm btn-warning">Edit</a>
+          <a
+            href="/delete/<%= todo.ID %>?_method=DELETE"
+            class="btn btn-sm btn-danger"
+            >Delete</a
+          >
+          <!-- <form action="/delete/<%= todo.ID %>?_method=DELETE" method="post">
                             <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                         </form> -->
-                    </td>
-                </tr>
-            <% } %>
-        </tbody>
-    </table>
+        </td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
 </div>
 
 <%- include("_footer") %>
