@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const path = require('path')
 // const methodOverride = require('method-override')
 
-const {mongoConnect} = require('./services/mongo')
+const { mongoConnect } = require('./services/mongo')
 
 const app = express()
 
