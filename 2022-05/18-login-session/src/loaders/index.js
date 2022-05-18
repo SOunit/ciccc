@@ -1,7 +1,7 @@
-const {expressLoader} = require('./express')
-const {InitiateMongoServer} = require('./mongodb')
+const { expressLoader } = require('./express')
+const { InitiateMongoServer } = require('./mongodb')
 
 exports.loaders = ({ expressApp }) => {
-    InitiateMongoServer()
-    expressLoader({ app: expressApp });
+  InitiateMongoServer()
+  expressLoader({ app: expressApp })
 }
