@@ -14,7 +14,17 @@ router.get('/login', (req, res) => {
   res.render('login')
 })
 
-router.post('/login', (req, res) => {
+router.post('/login', async (req, res) => {
+  const { email, password } = req.body
+  const user = new User(email, password)
+  const result = await user.findByEmailAndPassword()
+
+  console.log(result)
+
+  if (!result) {
+    res.render('login')
+  }
+
   req.session.email = req.body.email
   res.end('logged in')
 })

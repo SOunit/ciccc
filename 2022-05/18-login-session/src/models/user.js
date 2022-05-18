@@ -11,4 +11,11 @@ module.exports = class User {
     const dbo = InitiateDatabase()
     return dbo.collection('users').insertOne(this)
   }
+
+  findByEmailAndPassword() {
+    const dbo = InitiateDatabase()
+    return dbo
+      .collection('users')
+      .findOne({ email: this.email, password: this.password })
+  }
 }
